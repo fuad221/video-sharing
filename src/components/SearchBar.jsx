@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Paper, TextField } from "@material-ui/core";
 
-function SearchBar() {
+function SearchBar({onSubmit}) {
     const [searchTerm, setSearchTerm] = useState("");
     
     const handleChange = (e) => setSearchTerm(e.target.value);
@@ -9,7 +9,7 @@ function SearchBar() {
 
     const onKeyPress = (e) => {
         if(e.key === "Enter") {
-            onsubmit(searchTerm)
+            onSubmit(searchTerm)
         }
     }
 
