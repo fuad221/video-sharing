@@ -3,11 +3,9 @@ import { Paper, Typography } from "@material-ui/core";
 
 
 const VideoDetail = ({ video: { id: { videoId }, snippet: { title, channelTitle, description } } }) => {
-    if (!videoId) return <div>Loading...</div>;
+    if (!videoId) return <div><img src="https://d1y2qj23ol72q6.cloudfront.net/2019/02/YouTube.jpg" style={{width: "100%"}}/></div>;
 
     const videoSrc = `https://www.youtube.com/embed/${videoId}`;
-
-
 
     return (
         <>
@@ -16,7 +14,7 @@ const VideoDetail = ({ video: { id: { videoId }, snippet: { title, channelTitle,
                     frameBorder="0"
                     height="100%"
                     width="100%"
-                    title="Video Player"
+                    title="Video Player" 
                     src={videoSrc}
                 />
             </Paper>

@@ -6,7 +6,6 @@ function SearchBar({onSubmit}) {
     
     const handleChange = (e) => setSearchTerm(e.target.value);
 
-
     const onKeyPress = (e) => {
         if(e.key === "Enter") {
             onSubmit(searchTerm)

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { youtube, SearchBar, VideoDetail, VideoList } from './components';
+import { youtube, SearchBar, VideoDetail, VideoList, } from './components';
 import { Grid } from "@material-ui/core";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
              { <SearchBar onSubmit={handleSubmit} /> }
            </Grid>
            <Grid item xs={8}>
-             {/* <VideoDetail video={selectedVideo} /> */}
+             <VideoDetail video={selectedVideo} />
            </Grid>
            <Grid item xs={4}>
              <VideoList videos={videos} onVideoSelect={setSelectedVideo} />
