@@ -13,13 +13,13 @@ function App() {
        <Grid item xs={11}>
          <Grid container spacing={10}>
            <Grid item xs={12}>
-             {/* <SearchBar onSubmit={handleSubmit} /> */}
+             { <SearchBar onSubmit={handleSubmit} /> }
            </Grid>
            <Grid item xs={8}>
              {/* <VideoDetail video={selectedVideo} /> */}
            </Grid>
            <Grid item xs={4}>
-             {/* <VideoList videos={videos} onVideoSelect={setSelectedVideo} /> */}
+             <VideoList videos={videos} onVideoSelect={setSelectedVideo} />
            </Grid>
          </Grid >
        </Grid>
